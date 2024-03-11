@@ -26,7 +26,8 @@ Adapter Pattern ทำงานโดยการสร้างอินเท�
 ![Adapter Pattern Diagram](../master/src/img/Adapter.png)
 
 ### ตัวอย่าง
-`// สร้างอ็อบเจกต์ iPhone
+```java
+// สร้างอ็อบเจกต์ iPhone
 IPhone iPhone = new IPhone();
 
 // สร้างอัดเพ็ปเตอร์เพื่อใช้งานพอร์ต USB-C กับ iPhone
@@ -36,5 +37,5 @@ USB_CPort adapter = new LightningToTypeCAdapter(iPhone);
 adapter.recharge();
 
 // ใช้งานพอร์ต USB-C เพื่อถ่ายโอนข้อมูล
-adapter.useUSB_C();`
-
+adapter.useUSB_C();
+```
